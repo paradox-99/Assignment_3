@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Hockey's</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF4240',
+                        heading: '#131318',
+                        paragraph: '#13131880',                 // rgba(19, 19, 24, 0.50) into hex code
+                    },
+                    fontFamily: {
+                        'Manrope': ['"Manrope", sans-serif']
+                    },
+                    fontSize: {
+                        price_font: '18px',
+                    },
+                    gridTemplateRows: {
+                        custrow: '338px, 450px',
+                    },
+                    gridTemplateColumns: {
+                        custcol: '338px, 450px',
+                    },
+                    backgroundImage: {
+                        background1: 'linear-gradient(0deg, #13131880, #13131880), url("images/2.png")',
+                        background2: 'linear-gradient(0deg, #13131880, #13131880), url("images/3.png")',
+                        background3: 'linear-gradient(0deg, #13131880, #13131880), url("images/4.png")',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            /* color: #13131833; */
+        }
+    </style>
+</head>
+
+<body class="font-Manrope">
+    <header class="px-5 pt-5 lg:px-[100px] xl:px-[135px] lg:pt-[50px]">
+        <nav>
+            <div class="navbar bg-base-100 p-0">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52 text-[#424247]">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-primary">’</span>s</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 lg:gap-x-0 xl:gap-x-11 text-[#424247] ">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-primary text-white text-[18px] lg:text-xl rounded-lg hover:bg-primary">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <section class="mt-14 rounded-2xl">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item z-10 relative w-full">
+                    <img src="images/1.png" class="w-full" />
+                    <div class="absolute flex gap-x-5 transform -translate-y-1/2 left-[40%] lg:left-8 top-[88%]">
+                        <a href="#slide3"
+                            class="btn btn-circle w-8 h-8 min-h-8 lg:w-12 lg:h12 lg:min-h-12 bg-black text-white hover:bg-[#1f1d1d]">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle w-8 h-8 min-h-8 lg:w-12 lg:h12 lg:min-h-12 bg-black text-white hover:bg-[#1f1d1d]">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item z-10 relative w-full">
+                    <img src="images/banner2.jpg" class="w-full rounded-2xl" />
+                    <div class="absolute flex gap-x-5 transform -translate-y-1/2 left-[40%] lg:left-8 top-[90%]">
+                        <a href="#slide1"
+                            class="btn btn-circle w-8 h-8 min-h-8 lg:w-12 lg:h12 lg:min-h-12 bg-black text-white hover:bg-[#1f1d1d]">❮</a>
+                        <a href="#slide3"
+                            class="btn btn-circle w-8 h-8 min-h-8 lg:w-12 lg:h12 lg:min-h-12 bg-black text-white hover:bg-[#1f1d1d]">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item z-10 relative w-full">
+                    <img src="images/banner3.jpg" class="w-full rounded-2xl" />
+                    <div class="absolute flex gap-x-5 transform -translate-y-1/2 left-[40%] lg:left-8 top-[90%]">
+                        <a href="#slide2"
+                            class="btn btn-circle w-8 h-8 min-h-8 lg:w-12 lg:h12 lg:min-h-12 bg-black text-white hover:bg-[#1f1d1d]">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle w-8 h-8 min-h-8 lg:w-12 lg:h12 lg:min-h-12 bg-black text-white hover:bg-[#1f1d1d]">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-black z-20 rounded-xl lg:rounded-2xl lg:absolute relative lg:top-[70%] lg:left-[49%] lg:w-[400px] xl:w-[502px] p-4 xl:p-8 xl:top-[77%] xl:left-[55%]">
+                <h3 class="text-white text-[18px] lg:xl xl:text-2xl font-extrabold">Meet all the heroes from the field
+                </h3>
+                <p class="text-[#ffffff99] text-[14px] lg:text-base lg:pt-[10px] text-justify xl:pt-4">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin.
+                </p>
+            </div>
+        </section>
+    </header>
+    <main class="px-5 pt-5 lg:px-[100px] xl:px-[135px] lg:pt-[100px]">
+        <hr class="border border-dashed bg-[#13131833]">
+        <section class="mt-8">
+            <div class="text-center mb-8">
+                <h1 class="text-[22px] lg:text-4xl text-heading font-extrabold pb-4 lg:pb-6">Professional Hockeys Club
+                </h1>
+                <p class="text-[14px] lg:text-base text-paragraph">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin.
+                </p>
+            </div>
+            <hr class="border border-dashed bg-[#13131833] ">
+            <div class="mb-10 lg:mb-[100px]">
+                <div class="flex flex-col gap-y-6 lg:mt-12 mt-6 lg:flex-row lg:justify-between">
+                    <div class="text-center">
+                        <div class="radial-progress text-primary" style="--value:87;" role="progressbar">87%</div>
+                        <h4 class="text-xl text-heading font-semibold pt-6 pb-4">Prayer Facility</h4>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                        <h4 class="text-xl text-heading font-semibold pt-6 pb-4">Experienced Coach</h4>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="radial-progress text-[#FFB546]" style="--value:80;" role="progressbar">80%</div>
+                        <h4 class="text-xl text-heading font-semibold pt-6 pb-4">Senior Player</h4>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="radial-progress text-[#4C8DF1]" style="--value:90;" role="progressbar">90%</div>
+                        <h4 class="text-xl text-heading font-semibold pt-6 pb-4">Training Ground</h4>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border border-dashed bg-[#13131833]">
+        <section class="mt-8">
+            <div class="text-center mb-8">
+                <h1 class="text-[22px] lg:text-4xl text-heading font-extrabold pb-4 lg:pb-6">Program Sections</h1>
+                <p class="text-[14px] lg:text-base text-paragraph">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin.
+                </p>
+            </div>
+            <hr class="border border-dashed bg-[#13131833] ">
+            <div class="mb-10 lg:mb-[100px] mt-12">
+                <div class="grid grid-cols-2 grid-rows-cust gap-6 h-fit">
+                    <div class=" bg-background1 bg-cover bg-no-repeat rounded-2xl text-white p-10 flex flex-col items-baseline justify-end">
+                        <h2 class="text-[28px] font-extrabold">Junior Program</h2>
+                        <p class="font-medium pt-4 pb-6">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.
+                            Tortor congue sed et in.
+                        </p>
+                        <a href="" class="btn bg-primary px-[22px] py-[10px] text-xl font-bold border-none text-white">Register Now!</a>
+                    </div>
+                    <div class=" bg-background2 bg-cover bg-no-repeat rounded-2xl text-white p-10 flex flex-col items-baseline justify-end">
+                        <h2 class="text-[28px] font-extrabold">Teenager Program</h2>
+                        <p class="font-medium pt-4 pb-6">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.
+                            Tortor congue sed et in.
+                        </p>
+                        <a href="" class="btn bg-primary px-[22px] py-[10px] text-xl font-bold border-none text-white">Register Now!</a>
+                    </div>
+                    <div class="col-span-2 bg-background3 bg-cover bg-no-repeat rounded-2xl text-white p-10 flex flex-col items-baseline justify-end">
+                        <h2 class="text-[28px] font-extrabold">Professional Program</h2>
+                        <p class="font-medium pt-4 pb-6 w-[520px]">
+                            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla.
+                            Tortor congue sed et in.
+                        </p>
+                        <a href="" class="btn bg-primary px-[22px] py-[10px] text-xl font-bold border-none text-white">Register Now!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
